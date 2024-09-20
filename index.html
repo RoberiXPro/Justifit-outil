@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OUTILS JUSTIFIT</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0 auto;
+            text-align: center;
+            width: 800px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        form {
+            background-color: #005c96;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+		
+        h1 {
+            color: yellow;
+        }
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #005c96;
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+        }
+        input[type="button"], button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        input[type="button"]:hover, button:hover {
+            background-color: #3e8e41;
+        }
+        textarea {
+            margin-top: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            height: 100px;
+            box-sizing: border-box;
+        }
+        select {
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+        }
+        .container1 {
+            background-color: cyan;
+            padding: 20px;
+            border-radius: 8px;
+        }
+		.container2 {
+            background-color: cyan;
+            padding: 20px;
+            border-radius: 8px;
+        }
+		.container3 {
+            background-color: cyan;
+            padding: 20px;
+            border-radius: 8px;
+        }
+		.container4
+		{
+            background-color: cyan;
+            padding: 20px;
+            border-radius: 8px;
+        }
+		.container5
+		{
+            background-color: cyan;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            width: 430px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        pre {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            text-align: left;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+	<script>
+	</script>
+</head>
+<body>
+<div class="container1">
+    <form>
+        <h1>OUTILS JUSTIFIT</h1>
+        <label><strong>-------------------------------------------------------------------------</strong></label>
+        <h2>CALL TO ACTION</h2>
+        <input type="hidden" id="action1" name="action1" value='<div class="bloc-bonsavoir">'>
+        <input type="hidden" id="action2" name="action2" value='<div class="title-bonsavoir">'>
+        <select name="calltoaction" id="action3" name="action3">
+            <option value="<strong>Bon à savoir :</strong>">Bon à savoir :</option>
+            <option value="<strong>À noter :</strong>">À noter :</option>
+            <option value="<strong>À savoir :</strong>">À savoir :</option>
+            <option value="<strong>Important :</strong>">Important :</option>
+            <option value="<strong>Nos conseils :</strong>">Nos conseils :</option>
+            <option value="<strong>Attention :</strong>">Attention :</option>
+            <option value="<strong>Remarque :</strong>">Remarque :</option>
+            <option value="<strong>Remember:</strong>">Remember:</option>
+			<option value="<strong>Beware:</strong>">Beware:</option>
+			<option value="<strong>Advice:</strong>">Advice:</option>
+			<option value="<strong>Caution:</strong>">Caution:</option>
+			<option value="<strong>Did you know?</strong>">Did you know?</option>
+			<option value="<strong>Exception:</strong>">Exception:</option>
+			<option value="<strong>Insight:</strong>">Insight:</option>
+			<option value="<strong>Tip:</strong>">Tip:</option>
+			<option value="<strong>Good to know:</strong>">Good to know:</option>
+			<option value="<strong>Word to the wise:</strong>">Word to the wise:</option>
+			<option value="<strong>Expert insight:</strong>">Expert insight:</option>
+			<option value="<strong>Pro tip:</strong>">Pro tip:</option>
+			<option value="<strong>Noteworthy:</strong>">Noteworthy:</option>
+			<option value="<strong>Key consideration:</strong>">Key consideration:</option>
+			<option value="<strong>Prudent approach:</strong>">Prudent approach:</option>
+			<option value="<strong>Practical consideration:</strong>">Practical consideration:</option>
+        </select>
+        <input type="hidden" id="action4" name="action4" value='</div>'><br>
+        <input type="hidden" id="action5" name="action5" value='<div class="desc-bonsavoir">'><br>
+        <label><strong>Texte ici</strong></label><br>
+        <textarea id="action6" name="action6"></textarea><br>
+        <input type="hidden" id="action7" name="action7" value='</div></div>'><br>
+        <input type="button" value="Copier" onclick="calling()" rel="target_blank"><br>
+        <label><strong>-------------------------------------------------------------------------</strong></label><br>
+    </form>
+	
+	<script>
+	function calling() {
+            var action1 = document.getElementById("action1").value;
+            var action2 = document.getElementById("action2").value;
+            var action3 = document.getElementById("action3").value;
+            var action4 = document.getElementById("action4").value;
+            var action5 = document.getElementById("action5").value;
+            var action6 = document.getElementById("action6").value;
+            var action7 = document.getElementById("action7").value;
+            var message = action1 + action2 + "<strong>" + action3 + "</strong>" + action4 + action5 + action6 + action7;
+            alert(message);
+            var textarea = document.createElement("textarea");
+            textarea.value = message;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            textarea.remove();
+        }
+
+	</script>
+	</div>
+<div class="container2">
+   <h2>Convertir en majuscules</h2>
+    <input type="text" id="inputText" placeholder="Entrez du texte en minuscules" />
+    <button onclick="convertirEnMajuscules()">Convertir</button>
+    <p id="resultat"></p>
+	
+	<script>
+	 function convertirEnMajuscules() {
+            var input = document.getElementById('inputText').value;
+            var resultat = input.toUpperCase();
+            document.getElementById('resultat').textContent = resultat;
+        }
+	</script>
+</div>	
+<div class="container3">
+    <form>
+        <p>TROUVER MON AVOCAT :</p>
+        <p>[ctabtn url="Please enter url here" text="Trouvez mon avocat" target="_blank" follow="follow" color="blue"]</p><br>
+        <p>CODE POUR : TÉLÉCHARGER L'INFOGRAPHIE:</p>
+        <p>[ctabtn url="Please enter url here" text="Télécharger l'infographie" target="_blank" follow="follow" color="blue"]</p><br>
+    </form>
+	
+	<script></script>
+	</div>
+
+<div class="container3">
+    <form style="background-color:#008c56; color:#ffffff">
+        <label><strong>-------------------------------------------------------------------------</strong></label>
+        <h2>NO FOLLOW CODE</h2>
+        <input type="hidden" id="follow1" name="follow1" value='<a href="'>
+        <label><strong>Les mots clés séléctionnés ici</strong></label><br>
+        <textarea id="follow5" name="follow5"></textarea><br>
+        <input type="hidden" id="follow6" name="follow6" value='</a>'><br>
+        <label><strong>Lien externe ici</strong></label><br>
+        <textarea id="follow2" name="follow2"></textarea><br>
+        <input type="button" value="Copier" onclick="follow()"><br>
+        <input type="hidden" value='"'>
+        <input type="hidden" value='" rel="nofollow noopener" target="_blank"'>
+        <input type="hidden" value=''>
+        <label><strong>-------------------------------------------------------------------------</strong></label><br>
+    </form>
+	<script>
+	   
+		function follow(){
+var follow1 = document.getElementById("follow1").value; 
+var follow2 = document.getElementById("follow2").value;
+var follow3 = document.getElementById("follow3").value; 
+var follow4 = document.getElementById("follow4").value;
+var follow5 = document.getElementById("follow5").value; 
+var follow6 = document.getElementById("follow6").value;
+		
+    var message = follow1 + follow2 + "<strong>" + follow3 + "</strong>" + follow4 + follow5 + follow6;
+    alert(message);
+    
+    // Copie le contenu dans le presse-papiers
+    var textarea = document.createElement("textarea");
+    textarea.value = message;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    textarea.remove();
+}
+	</script>
+	</div>
+
+    <div class="container4">
+        <h2>OUTILS POUR LES SOURCES D'ARTICLES</h2>
+        <div class="form-group">
+            <label for="input1">Nom du site 1</label>
+            <input type="hidden" id="symbol1" value='"'>
+            <input type="text" id="input1" name="input1" value="">
+            <label for="url1">Url 1</label>
+            <input type="text" id="url1" name="url1" value="">
+        </div>
+        <div class="form-group">
+            <label for="input2">Nom du site 2</label>
+            <input type="text" id="input2" name="input2" value="">
+            <label for="url2">Url 2</label>
+            <input type="text" id="url2" name="url2" value="">
+        </div>
+        <div class="form-group">
+            <label for="input3">Nom du site 3</label>
+            <input type="text" id="input3" name="input3" value="">
+            <label for="url3">Url 3</label>
+            <input type="text" id="url3" name="url3" value="">
+        </div>
+        <div class="form-group">
+            <label for="input4">Nom du site 4</label>
+            <input type="text" id="input4" name="input4" value="">
+            <label for="url4">Url 4</label>
+            <input type="text" id="url4" name="url4" value="">
+        </div>
+        <div class="form-group">
+            <label for="input5">Nom du site 5</label>
+            <input type="text" id="input5" name="input5" value="">
+            <label for="url5">Url 5</label>
+            <input type="text" id="url5" name="url5" value="">
+        </div>
+        <div class="form-group">
+            <label for="input6">Nom du site 6</label>
+            <input type="text" id="input6" name="input6" value="">
+            <label for="url6">Url 6</label>
+            <input type="text" id="url6" name="url6" value="">
+        </div>
+        <div class="form-group">
+            <label for="input7">Nom du site 7</label>
+            <input type="text" id="input7" name="input7" value="">
+            <label for="url7">Url 7</label>
+            <input type="text" id="url7" name="url7" value="">
+        </div>
+        <div class="form-group">
+            <label for="input8">Nom du site 8</label>
+            <input type="text" id="input8" name="input8" value="">
+            <label for="url8">Url 8</label>
+            <input type="text" id="url8" name="url8" value="">
+        </div>
+        <input type="hidden" id="url9" name="url9" value='"]'>
+        <input type="button" value="Copier" onclick="controle()">
+<script>
+function controle() {
+            setDomainName("input1", "url1");
+            setDomainName("input2", "url2");
+            setDomainName("input3", "url3");
+            setDomainName("input4", "url4");
+            setDomainName("input5", "url5");
+            setDomainName("input6", "url6");
+            setDomainName("input7", "url7");
+            setDomainName("input8", "url8");
+
+            var symbol1 = document.getElementById("symbol1").value;
+            var input1 = document.getElementById("input1").value;
+            var url1 = document.getElementById("url1").value;
+            var input2 = document.getElementById("input2").value;
+            var url2 = document.getElementById("url2").value;
+            var input3 = document.getElementById("input3").value;
+            var url3 = document.getElementById("url3").value;
+            var input4 = document.getElementById("input4").value;
+            var url4 = document.getElementById("url4").value;
+            var input5 = document.getElementById("input5").value;
+            var url5 = document.getElementById("url5").value;
+            var input6 = document.getElementById("input6").value;
+            var url6 = document.getElementById("url6").value;
+            var input7 = document.getElementById("input7").value;
+            var url7 = document.getElementById("url7").value;
+            var input8 = document.getElementById("input8").value;
+            var url8 = document.getElementById("url8").value;
+            var url9 = document.getElementById("url9").value;
+
+            var message = "[article_sources list=" + symbol1 + input1 + " -- " + url1 + " | " +
+                input2 + " -- " + url2 + " | " +
+                input3 + " -- " + url3 + " | " +
+                input4 + " -- " + url4 + " | " +
+                input5 + " -- " + url5 + " | " +
+                input6 + " -- " + url6 + " | " +
+                input7 + " -- " + url7 + " | " +
+                input8 + " -- " + url8 + url9;
+
+            alert(message);
+
+            var textarea = document.createElement("textarea");
+            textarea.value = message;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            textarea.remove();
+        }
+
+        function setDomainName(inputId, urlId) {
+            var urlInput = document.getElementById(urlId);
+            var input = document.getElementById(inputId);
+            var url = urlInput.value;
+
+            if (url) {
+                var domainName = getDomainName(url);
+                input.value = domainName;
+            }
+        }
+
+        function getDomainName(url) {
+            var hostname;
+            if (url.indexOf("://") > -1) {
+                hostname = url.split('/')[2];
+            } else {
+                hostname = url.split('/')[0];
+            }
+            hostname = hostname.replace("www.", "");
+            var domain = hostname.split('.')[0];
+            var extension = hostname.split('.').slice(1).join('.');
+            return domain + '.' + extension;
+        }
+</script>
+    </div>
+	
+	
+<div class="container5">
+    <h2>Vérification d'article juridique</h2>
+    <label for="title">Titre de l'article :</label>
+    <textarea id="title" placeholder="Collez le titre de l'article ici"></textarea>
+
+    <label for="content">Contenu de l'article :</label>
+    <textarea id="content" placeholder="Collez le contenu de l'article ici"></textarea>
+
+    <button onclick="generateAndCopyPrompt()">Copier le prompt</button>
+
+    <pre id="result"></pre>
+
+    <script>
+        function generateAndCopyPrompt() {
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+
+            const prompt = `
+Tu es un expert en droit, spécialisé en vérification de la qualité et de l'authenticité des informations juridiques. Ta tâche consiste à analyser le contenu de l'article suivant pour vérifier l'exactitude, l'actualité et la clarté des informations juridiques qu'il contient. Pour ce faire, tu dois utiliser des sites gouvernementaux français et des sources à jour de 2024. Voici l'article à analyser :
+
+[Titre de l'article]
+
+${title}
+
+[Texte de l'article]
+
+${content}
+
+Vérification de l'authenticité :
+- Utilise des sites gouvernementaux français et des sources à jour de 2024 pour vérifier que les lois, décrets et articles de code mentionnés dans l'article sont corrects et toujours en vigueur.
+- Vérifie que les références à des jurisprudences ou des décisions de justice sont exactes et bien documentées en consultant des sources actuelles.
+
+Vérification de l'actualité :
+- Assure-toi que les informations fournies ne sont pas obsolètes en utilisant des sites et des sources de 2024.
+- Identifie toute législation ou réglementation récente qui pourrait affecter les informations présentées.
+
+Vérification de la clarté :
+- Identifie les phrases ou sections qui pourraient être mal exprimées ou ambiguës.
+- Propose des modifications pour améliorer la clarté et la précision de l'article.
+
+Commentaire général :
+- Fournis un retour général sur la qualité et l'exactitude de l'article.
+- Indique si l'article est prêt pour publication ou si des modifications supplémentaires sont nécessaires.
+
+Merci de fournir une réponse détaillée pour chaque point ci-dessus.
+`;
+
+            document.getElementById('result').innerText = prompt;
+            copyToClipboard(prompt);
+        }
+
+        function copyToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Prompt copié dans le presse-papiers !");
+        }
+     
+    </script>
+	</div>
+</body>
+        <h3>By Roberix</h3>
+</html>
