@@ -211,11 +211,12 @@
 
 
 <div class="container2">
+<form>
    <h2>Convertir en majuscules</h2>
     <input type="text" id="inputText" placeholder="Entrez du texte en minuscules" />
     <button onclick="convertirEnMajuscules()">Convertir</button>
     <p id="resultat"></p>
-	
+	</form>
 	<script>
 	 function convertirEnMajuscules() {
             var input = document.getElementById('inputText').value;
@@ -294,9 +295,9 @@ var follow6 = document.getElementById("follow6").value;
     }
 </style>
 
-<script>
 
     <div class="container4">
+	<form>
         <h2>OUTILS POUR LES SOURCES D'ARTICLES</h2>
         <div class="form-group">
             <label for="input1">Nom du site 1</label>
@@ -349,6 +350,7 @@ var follow6 = document.getElementById("follow6").value;
         </div>
         <input type="hidden" id="url9" name="url9" value='"]'>
         <input type="button" value="Copier" onclick="controle()">
+		</form>
 <script>
 function controle() {
             setDomainName("input1", "url1");
@@ -426,6 +428,7 @@ function controle() {
 	
 	
 <div class="container5">
+<form>
     <h2>Vérification d'article juridique</h2>
     <label for="title">Titre de l'article :</label>
     <textarea id="title" placeholder="Collez le titre de l'article ici"></textarea>
@@ -435,7 +438,8 @@ function controle() {
 
     <button onclick="generateAndCopyPrompt()">Copier le prompt</button>
 
-    <pre id="result"></pre>
+    
+	</form>
 
     <script>
         function generateAndCopyPrompt() {
